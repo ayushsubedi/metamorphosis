@@ -1,0 +1,3 @@
+## Kafka docker
+
+docker run -p 9092:9092 --name kafka  -e KAFKA_ZOOKEEPER_CONNECT=0.0.0.0:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://0.0.0.0:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 -d confluentinc/cp-kafka 
